@@ -1,0 +1,17 @@
+II-
+1- pwd
+2- ls > list.txt
+3- ls -r /
+4- head -n 3 /etc/passwd
+5- awk -F: '{print $(NF-2), $(NF-1), $NF}' /etc/passwd
+6- touch /tmp/fichier1 /tmp/fichier2 /tmp/fichier3   # Créer des fichiers vides
+   find /tmp -type f -empty -delete
+7- ls -l /etc | sed 's/janv./janvier/g;s/févr./février/g;s/mars/mars/g;s/avr./avril/g;s/mai/mai/g;s/juin/juin/g;s/juil./juillet/g;s/août/août/g;s/sept./septembre/g;s/oct./octobre/g;s/nov./novembre/g;s/déc./décembre/g' > liste.txt
+8- sort -k5 -n liste.txt
+
+III-
+1- sudo nano /etc/hostname => Modif nom  + sudo nano /etc/hosts => modif avec meme nom + sudo reboot => apliquer modif
+2- sudo nano /etc/update-motd.d/00-header => modif mess + reebot
+
+
+
